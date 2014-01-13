@@ -1,0 +1,49 @@
+{
+    "name": "gulp-imports",
+    "version": "0.0.1",
+    "description": "Gulp plugin for importing/including files",
+    "main": "index.js",
+    "scripts": {
+        "test": "mocha"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/ifandelse/gulp-imports.git"
+    },
+    "keywords": [
+        "gulp",
+        "plugin",
+        "gulp plugin",
+        "file",
+        "import",
+        "include",
+        "combine"
+    ],
+    "author": "Jim Cowart (http://freshbrewedcode.com/jimcowart)",
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "http://www.opensource.org/licenses/mit-license.php"
+        },
+        {
+            "type": "GPL",
+            "url": "http://www.opensource.org/licenses/gpl-3.0.html"
+        }
+    ],
+    "bugs": {
+        "url": "https://github.com/ifandelse/gulp-imports/issues"
+    },
+    "homepage": "https://github.com/ifandelse/gulp-imports/issues",
+    "devDependencies": {
+        "should": "~2.1.1",
+        "gulp": "~3.3.1"
+    },
+    "dependencies": {
+        "gulp-util": "~2.2.9",
+        "event-stream": "~3.1.0"
+    },
+    "directories": {
+        "spec": "spec"
+    },
+    "readmeFilename": "README.md"
+}

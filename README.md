@@ -1,0 +1,53 @@
+#Gulp-Imports 0.0.1
+
+A gulp plugin to make file imports/includes easy.
+
+>WARNING - this is serious alphaware - I still need to add tests and examples for more than just JavaScript imports.
+
+##The Basic Idea
+I loved Anvil.js - it's by far the best CoC approach to JavaScript/web asset builds that I've ever seen. I want the same "import" syntax for projects of mine using Gulp, that I had with Anvil.js.
+
+For example, consider the following files:
+
+###file1.js
+```
+var file1 = function() {
+    console.log("I'm a function from file1.js");
+};
+
+//import("subdir1/file2.js");
+
+//import("subdir2/file4.js");
+```
+
+###subdir1/file2.js
+```
+var file2 = function() {
+    console.log("I'm a function from file2.js");
+};
+
+//import("subdir1a/file3.js");
+```
+
+###subdir1/subdir1a/file3.js
+```
+var file3 = function() {
+    console.log("I'm a function from file3.js");
+};
+
+```
+
+###subdir2/file4.js
+var file4 = function() {
+   console.log("I'm a function from file4.js");
+};
+
+Each of the above files is using an `//imports("pathToFile");` approach to include the contents of the imported file inline where the import comment existed. This plugin supports *nested import statements*, and allows you to reference the files *relatively* from the file doing the importing.
+
+##Disclaimers
+I'm sure there's a better way to do this - so if you know of one, tell me, or submit a PR :-)
+
+In the meantime, I'll be trying to think of how to improve this to the point where I can bring myself to encourage others to use it.
+
+##License
+It's MIT. Have fun.
