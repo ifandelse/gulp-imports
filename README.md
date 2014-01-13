@@ -38,9 +38,11 @@ var file3 = function() {
 ```
 
 ###subdir2/file4.js
+```
 var file4 = function() {
    console.log("I'm a function from file4.js");
 };
+```
 
 Each of the above files is using an `//imports("pathToFile");` approach to include the contents of the imported file inline where the import comment existed. This plugin supports *nested import statements*, and allows you to reference the files *relatively* from the file doing the importing.
 
