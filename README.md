@@ -46,6 +46,51 @@ var file4 = function() {
 
 Each of the above files is using an `//imports("pathToFile");` approach to include the contents of the imported file inline where the import comment existed. This plugin supports *nested import statements*, and allows you to reference the files *relatively* from the file doing the importing.
 
+Running a gulpfile like this:
+
+```
+var gulp = require('gulp');
+var gulpImports = require('gulp-imports');
+
+gulp.task('imports', function() {
+    gulp.src(['file1.js'])
+        .pipe(gulpImports())
+        .pipe(gulp.dest('./result'));
+});
+
+gulp.task('default', function() {
+    gulp.run('imports');
+});
+
+```
+
+would result in the following combined output:
+
+```
+var file1 = function() {
+    console.log("I'm a function from file1.js");
+};
+
+var file2 = function() {
+    console.log("I'm a function from file2.js");
+};
+
+var file2a = function() {
+    console.log("I'm a function from file2a.js");
+};
+
+var file3 = function() {
+    console.log("I'm a function from file3.js");
+};
+
+var file4 = function() {
+   console.log("I'm a function from file4.js");
+};
+
+```
+
+Yay for combining files via includes that *don't make your IDE barf*.
+
 ##Disclaimers
 I'm sure there's a better way to do this - so if you know of one, tell me, or submit a PR :-)
 
