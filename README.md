@@ -1,4 +1,4 @@
-#Gulp-Imports 0.0.1
+#Gulp-Imports 0.0.2
 
 A gulp plugin to make file imports/includes easy.
 

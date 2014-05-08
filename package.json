@@ -1,6 +1,6 @@
 {
     "name": "gulp-imports",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "Gulp plugin for importing/including files",
     "main": "index.js",
     "scripts": {
@@ -21,16 +21,18 @@
         "combine"
     ],
     "author": "Jim Cowart (http://freshbrewedcode.com/jimcowart)",
-    "licenses": [
-        {
-            "type": "MIT",
-            "url": "http://www.opensource.org/licenses/mit-license.php"
-        },
-        {
-            "type": "GPL",
-            "url": "http://www.opensource.org/licenses/gpl-3.0.html"
-        }
-    ],
+    "contributors": [{
+        "name": "Jim Cowart",
+        "email": "WhyNotJustComment@OnMyBlog.com",
+        "url": "http://freshbrewedcode.com/jimcowart"
+    }, {
+        "name": "Marcus Longmuir",
+        "url": "https://github.com/MarcusLongmuir"
+    }],
+    "licenses": [{
+        "type": "MIT",
+        "url": "http://www.opensource.org/licenses/mit-license.php"
+    }],
     "bugs": {
         "url": "https://github.com/ifandelse/gulp-imports/issues"
     },
