@@ -29,17 +29,16 @@ var getExtension = function(p) {
 function getImport(ext, contents, dirname) {
     patterns[ext].lastIndex = 0; // OH lastIndex - how I HATE you.
     var match = patterns[ext].exec(contents);
-    return match ? { matchText: match[0], path: path.join(dirname, match[2])} : undefined;
+    return match ? { matchText: match[0], index: match.index, path: path.join(dirname, match[2])} : undefined;
 }
 
 function processMatch( _import, contents ) {
-    return contents.replace(
-        _import.matchText,
-        processFile(
-            _import.path,
-            String(fs.readFileSync( _import.path ))
-        )
-    );
+    return contents.substring(0,_import.index)+ 
+    processFile(
+        _import.path,
+        String(fs.readFileSync( _import.path ))
+    )+ 
+    contents.substring(_import.index+_import.matchText.length);
 }
 
 function processFile(p, contents) {
