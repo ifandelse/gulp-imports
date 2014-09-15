@@ -14,7 +14,7 @@ var g_util = require('gulp-util');
 
 // TODO: adjust these to be more forgiving with whitespace....
 var patterns = {
-    html: /[<][!][-]{2}.?import[(]?.?["'](.*)["'].?[)]?.?[-]{2}[>]/g,
+    html: /([<][!][-]{2}).?import[(]?.?["'](.*)["'].?[)]?.?[-]{2}[>]/g,
     js: /([\/]{2}|[\/][*]).?import.?[(]?.?["'](.*)["'].?[)]?[;]?.*?(\n[*][\/])?/g,
     css: /([\/]{2}|[\/][*]).?import[(]?.?["'](.*)["'].?[)]?([*][\/])?/g,
     yaml: /([ \t]*)[-][ ]?import[:][ ]*["'](.*)["']/g,
