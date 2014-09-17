@@ -1,8 +1,8 @@
-#Gulp-Imports 0.0.2
+#Gulp-Imports 0.0.3
 
 A gulp plugin to make file imports/includes easy.
 
->WARNING - this is serious alphaware - I still need to add tests and examples for more than just JavaScript imports.
+>WARNING - this is still alphaware - I still need to add tests and examples for more than just JavaScript & HTML imports.
 
 ##The Basic Idea
 I loved Anvil.js - it's by far the best CoC approach to JavaScript/web asset builds that I've ever seen. I want the same "import" syntax for projects of mine using Gulp, that I had with Anvil.js.

@@ -1,52 +1,62 @@
 {
-    "name": "gulp-imports",
-    "version": "0.0.2",
-    "description": "Gulp plugin for importing/including files",
-    "main": "index.js",
-    "scripts": {
-        "test": "mocha"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/ifandelse/gulp-imports.git"
-    },
-    "keywords": [
-        "gulp",
-        "plugin",
-        "gulp plugin",
-        "gulpplugin",
-        "file",
-        "import",
-        "include",
-        "combine"
-    ],
-    "author": "Jim Cowart (http://freshbrewedcode.com/jimcowart)",
-    "contributors": [{
-        "name": "Jim Cowart",
-        "email": "WhyNotJustComment@OnMyBlog.com",
-        "url": "http://freshbrewedcode.com/jimcowart"
-    }, {
-        "name": "Marcus Longmuir",
-        "url": "https://github.com/MarcusLongmuir"
-    }],
-    "licenses": [{
-        "type": "MIT",
-        "url": "http://www.opensource.org/licenses/mit-license.php"
-    }],
-    "bugs": {
-        "url": "https://github.com/ifandelse/gulp-imports/issues"
-    },
-    "homepage": "https://github.com/ifandelse/gulp-imports/issues",
-    "devDependencies": {
-        "should": "~2.1.1",
-        "gulp": "~3.3.1"
-    },
-    "dependencies": {
-        "gulp-util": "~2.2.9",
-        "event-stream": "~3.1.0"
-    },
-    "directories": {
-        "spec": "spec"
-    },
-    "readmeFilename": "README.md"
+	"name": "gulp-imports",
+	"version": "0.0.3",
+	"description": "Gulp plugin for importing/including files",
+	"main": "index.js",
+	"scripts": {
+		"test": "mocha"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/ifandelse/gulp-imports.git"
+	},
+	"keywords": [
+		"gulp",
+		"plugin",
+		"gulp plugin",
+		"gulpplugin",
+		"file",
+		"import",
+		"include",
+		"combine"
+	],
+	"author": "Jim Cowart (http://freshbrewedcode.com/jimcowart)",
+	"contributors": [
+		{
+			"name": "Jim Cowart",
+			"email": "WhyNotJustComment@OnMyBlog.com",
+			"url": "http://freshbrewedcode.com/jimcowart"
+		},
+		{
+			"name": "Marcus Longmuir",
+			"url": "https://github.com/MarcusLongmuir"
+		},
+		{
+			"name": "David Loidolt",
+			"url": "https://github.com/exaptis"
+		}
+	],
+	"licenses": [
+		{
+			"type": "MIT",
+			"url": "http://www.opensource.org/licenses/mit-license.php"
+		}
+	],
+	"bugs": {
+		"url": "https://github.com/ifandelse/gulp-imports/issues"
+	},
+	"homepage": "https://github.com/ifandelse/gulp-imports/issues",
+	"devDependencies": {
+		"gulp": "~3.3.1",
+		"gulp-prettify": "^0.3.0",
+		"should": "~2.1.1"
+	},
+	"dependencies": {
+		"gulp-util": "~2.2.9",
+		"event-stream": "~3.1.0"
+	},
+	"directories": {
+		"spec": "spec"
+	},
+	"readmeFilename": "README.md"
 }
